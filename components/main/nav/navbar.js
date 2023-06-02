@@ -62,6 +62,15 @@ export default function Navbar() {
             Contact
           </Link>
         </li>
+        <li
+          className={` text-center p-5 hover:font-bold ${
+            pathname == "/esg" ? "font-bold underline" : ""
+          }`}
+        >
+          <Link href="/esg" className="lg:text-xl">
+            ESG자가진단
+          </Link>
+        </li>
       </ul>
 
       <p className=" absolute top-2 right-2 sm:hidden " onClick={toggleMenu}>
