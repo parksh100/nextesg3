@@ -1,9 +1,9 @@
 import Hero from "@/components/main/Hero/hero";
 import ProcessPage from "@/components/main/Process/page";
-import Video from "@/components/main/Video/video";
 import BlogPage from "@/components/main/blog/blog";
 import Carousel from "@/components/main/carousel";
-import Image from "next/image";
+import ContactForm from "@/components/main/Contact/contact";
+import Footer from "@/components/main/Footer/footer";
 
 export default function Home() {
   return (
@@ -12,6 +12,8 @@ export default function Home() {
       <Hero />
       <ProcessPage />
       <BlogPage />
+      <ContactForm />
+      <Footer />
     </>
   );
 }

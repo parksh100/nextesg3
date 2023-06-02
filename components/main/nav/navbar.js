@@ -16,45 +16,51 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="sticky bg-white drop-shadow-sm  top-0 z-50 w-full h-20 sm:flex sm:justify-between sm:mx-2 sm:items-center sm:p-4">
+    <nav className="sticky bg-white drop-shadow-sm  top-0 z-50 w-full h-20 sm:flex sm:justify-between  sm:items-center sm:p-4">
       <img
         src="/images/logo_esgMaster2.svg"
         alt="esg master logo"
-        className="h-20 p-2"
+        className="h-20 p-2 bg-center bg-cover sm:h-24 sm:ml-2 sm:mr-4 sm:mt-2 sm:mb-2"
       />
 
       <ul
-        className={` border-orange-800 border-8 ${
-          showMenu ? "block" : "hidden"
-        } sm:flex cursor-pointer`}
+        className={` ${showMenu ? "block" : "hidden"} sm:flex cursor-pointer`}
       >
         <li
-          className={`bg-orange-100 text-black text-center p-5 hover:font-bold ${
+          className={` text-black text-center p-5 hover:font-bold ${
             pathname == "/" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/">Home</Link>
+          <Link href="/" className="lg:text-xl">
+            Home
+          </Link>
         </li>
         <li
-          className={`bg-orange-200 text-center p-5 hover:font-bold ${
+          className={` text-center p-5 hover:font-bold ${
             pathname == "/about" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/about">About</Link>
+          <Link href="/about" className="lg:text-xl">
+            About
+          </Link>
         </li>
         <li
-          className={`bg-orange-300 text-center p-5 hover:font-bold ${
+          className={` text-center p-5 hover:font-bold ${
             pathname == "/service" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/service">Services</Link>
+          <Link href="/service" className="lg:text-xl">
+            Services
+          </Link>
         </li>
         <li
-          className={`bg-orange-400 text-center p-5 hover:font-bold ${
+          className={` text-center p-5 hover:font-bold ${
             pathname == "/contact" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact" className="lg:text-xl">
+            Contact
+          </Link>
         </li>
       </ul>
 
