@@ -8,6 +8,7 @@ import {
   ImRocket,
   ImCheckmark,
 } from "react-icons/im";
+import ButtonComponent from "../common/button";
 
 export default function ContactForm() {
   return (
@@ -63,11 +64,8 @@ export default function ContactForm() {
                 className="w-full rounded-md border-transparent px-6 py-3 text-base placeholder-gray-500 shadow-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 mt-3 my-3"
               />
             </div>
-            <div className="flex justify-center mb-20">
-              <button className="bg-blue-800 text-white py-3 px-6 rounded-xl font-bold mt-2 hover:bg-red-600 lg:py-4 lg:px-10 lg:text-lg ">
-                상담신청
-              </button>
-            </div>
+
+            <ButtonComponent text="상담신청" />
           </form>
         </div>
         {/* <div className="px-10 py-2">

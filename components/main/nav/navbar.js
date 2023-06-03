@@ -31,7 +31,7 @@ export default function Navbar() {
             pathname == "/" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/" className="lg:text-xl">
+          <Link href="/" className="lg:text-lg">
             Home
           </Link>
         </li>
@@ -40,7 +40,7 @@ export default function Navbar() {
             pathname == "/about" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/about" className="lg:text-xl">
+          <Link href="/about" className="lg:text-lg">
             About
           </Link>
         </li>
@@ -49,7 +49,7 @@ export default function Navbar() {
             pathname == "/service" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/service" className="lg:text-xl">
+          <Link href="/service" className="lg:text-lg">
             Services
           </Link>
         </li>
@@ -58,7 +58,7 @@ export default function Navbar() {
             pathname == "/contact" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/contact" className="lg:text-xl">
+          <Link href="/contact" className="lg:text-lg">
             Contact
           </Link>
         </li>
@@ -67,7 +67,7 @@ export default function Navbar() {
             pathname == "/esg" ? "font-bold underline" : ""
           }`}
         >
-          <Link href="/esg" className="lg:text-xl">
+          <Link href="/esg" className="lg:text-lg">
             ESG자가진단
           </Link>
         </li>

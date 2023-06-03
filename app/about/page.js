@@ -1,4 +1,5 @@
 import TeamComponent from "@/components/main/About/team";
+import PageHeaderComponent from "@/components/main/common/page-header";
 import Link from "next/link";
 import {
   ImOffice,
@@ -69,6 +70,11 @@ export default function AboutPage() {
 
       {/* Our Team */}
       <TeamComponent />
+      <PageHeaderComponent
+        title="ESG Master만의 경쟁력"
+        description1="EST Master만의 경쟁력"
+        description2="ESG <aster만의 ㄱ여쟁ㄹ"
+      />
     </section>
   );
 }
