@@ -12,7 +12,9 @@ export default function Footer() {
               className="w-52"
             />
             <p className="text-gray-400 text-base mt-2">
-              <strong>중소기업 ESG컨설팅 전문기업!</strong>
+              <strong className="text-gray-900">
+                중소기업 ESG컨설팅 전문기업!
+              </strong>
               <br /> 검증된 노하우로 ESG경영을 돕습니다. ESG Master는 ESG경영을
               위한 컨설팅, 교육, 컨퍼런스, 콘텐츠를 제공합니다.
             </p>

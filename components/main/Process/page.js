@@ -8,7 +8,7 @@ import {
   ImRocket,
   ImCheckmark,
 } from "react-icons/im";
-import ProcessCheckList from "./process-checklist";
+import ProcessCheckList from "./ProcessChecklist";
 
 export default function ProcessPage() {
   return (

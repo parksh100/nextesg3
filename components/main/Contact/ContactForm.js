@@ -8,7 +8,7 @@ import {
   ImRocket,
   ImCheckmark,
 } from "react-icons/im";
-import ButtonComponent from "../common/button";
+import ButtonComponent from "../common/Button";
 
 export default function ContactForm() {
   return (

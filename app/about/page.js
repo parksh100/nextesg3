@@ -1,5 +1,7 @@
-import TeamComponent from "@/components/main/About/team";
-import PageHeaderComponent from "@/components/main/common/page-header";
+import AboutSection from "@/components/main/About/AboutSection";
+import TeamComponent from "@/components/main/About/Team";
+import ProcessPage from "@/components/main/Process/page";
+import PageHeaderComponent from "@/components/main/common/PageHeader";
 import Link from "next/link";
 import {
   ImOffice,
@@ -8,6 +10,9 @@ import {
   ImGift,
   ImEqualizer,
   ImRocket,
+  ImSphere,
+  ImLibrary,
+  ImTrophy,
 } from "react-icons/im";
 
 export default function AboutPage() {
@@ -25,7 +30,7 @@ export default function AboutPage() {
       <section className="grid gap-x-8 gap-y-14 grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 mt-10 lg:gap-5 lg:gap-y-10 lg:mt-40">
         <div className="p-3 mx-2 shadow-xl hover:shadow-2xl">
           <div className="mb-4">
-            <ImOffice size="3em" color="#4a6cf7" />
+            <ImTrophy size="3em" color="#4a6cf7" />
           </div>
           <div className="text-gray-900 text-lg font-bold mb-2 lg:text-2xl">
             국가전문자격 경영지도사
@@ -39,7 +44,7 @@ export default function AboutPage() {
         </div>
         <div className="p-3 mx-2 shadow-xl hover:shadow-2xl">
           <div className="mb-4">
-            <ImFire size="3em" color="#4a6cf7" />
+            <ImLibrary size="3em" color="#4a6cf7" />
           </div>
           <div className="text-gray-900 text-lg font-bold mb-2 lg:text-2xl">
             컨설팅학 석/박사
@@ -54,14 +59,14 @@ export default function AboutPage() {
         </div>
         <div className="p-3 mx-2 shadow-xl hover:shadow-2xl">
           <div className="mb-4">
-            <ImStatsDots size="3em" color="#4a6cf7" />
+            <ImSphere size="3em" color="#4a6cf7" />
           </div>
           <div className="text-gray-900 text-lg font-bold mb-2 lg:text-2xl">
             ISO국제표준 전문가
           </div>
           <div className="text-sm  text-gray-400 lg:text-lg lg:pb-3">
             ESG의 대부분은 국제표준(ISO)의 이행으로 커버됩니다. 따라서 국제표준
-            전문가의 참여는 필수적인 요소입니다. ESG MASTER의 모든 컨설턴트는
+            전문가의 참여는 필수요소입니다. ESG MASTER의 모든 컨설턴트는
             ISO선임심사원 이상의 자격을 갖추고 있습니다. 국제표준의 이해여부는
             ESG컨설팅의 품질에 직접적인 영향을 미칩니다.
           </div>
@@ -72,9 +77,11 @@ export default function AboutPage() {
       <TeamComponent />
       <PageHeaderComponent
         title="ESG Master만의 경쟁력"
-        description1="EST Master만의 경쟁력"
-        description2="ESG <aster만의 ㄱ여쟁ㄹ"
+        description1="ESG Master는 항상 중소기업과 함께해온 컨설턴트들로 구성되어 있습니다."
+        description2={`정부지원사업을 포함하여 1,000건 이상의 다양한 민간 컨설팅(연구소, 이노비즈, 메인비즈, 국제인증, 자금조달 등) 경험을 보유하고 있습니다.\n 그만큼 중소기업의 상황을 잘 이해하고 있습니다. `}
       />
+      <AboutSection />
+      <ProcessPage />
     </section>
   );
 }

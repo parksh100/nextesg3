@@ -7,7 +7,7 @@ import {
   ImEqualizer,
   ImRocket,
 } from "react-icons/im";
-import CardComponent from "../common/card";
+import CardComponent from "../common/Card";
 
 export default function Hero() {
   return (
