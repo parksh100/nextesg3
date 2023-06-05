@@ -70,7 +70,7 @@ export default function AdditionalInfo() {
           <label className="text-gray-700 text-xl font-bold mb-2">
             1. 기업의 매출액을 선택해주세요.
           </label>
-          <div className=" ms-4 text-lg">
+          <div className=" ms-4 text-lg mt-5">
             <input
               type="radio"
               id="1"
@@ -143,12 +143,10 @@ export default function AdditionalInfo() {
         {/* 에너지 종류와 그 비율 */}
         <div>
           <div className="text-lg w-full  mb-4">
-            <p>
-              <strong className="text-blue-500">
-                귀사가 사용하고있는 에너지 종류와 그 비율 (%, 비용기준)
-              </strong>
-              을 선택 해 주세요.
-            </p>
+            <label className="text-gray-700 text-xl font-bold mb-2">
+              2. 귀사가 사용하고있는 에너지 종류와 그 비율 (%, 비용기준)을 선택
+              해 주세요.
+            </label>
           </div>
           <div className="mb-4">
             각 에너지의 사용 비율을 클릭 해 총합이 100%가 되도록 설정해 주시기
@@ -964,7 +962,7 @@ export default function AdditionalInfo() {
                     <span>
                       <span
                         className={`font-bold text-lg ${
-                          sum === 100 ? "text-blue-500 text-xl" : "text-red-500"
+                          sum <= 100 ? "text-blue-500 text-xl" : "text-red-500"
                         } `}
                       >
                         {sum}
